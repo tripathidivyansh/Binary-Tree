@@ -41,7 +41,7 @@ void levelOrderTraversal(node* root) {
 
     queue<node*> q;
     q.push(root);
-    q.push(NULL);  // Level separator
+    q.push(NULL);  
 
     while (!q.empty()) {
         node* temp = q.front();
