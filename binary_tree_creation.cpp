@@ -33,21 +33,21 @@ node* buildTree() {
     return root;
 }
 
-void inorderTraversal(node* root) {
-    if (root == NULL) return;
+// void inorderTraversal(node* root) {
+//     if (root == NULL) return;
 
-    inorderTraversal(root->left);
-    cout << root->data << " ";
-    inorderTraversal(root->right);
-}
+//     inorderTraversal(root->left);
+//     cout << root->data << " ";
+//     inorderTraversal(root->right);
+// }
 
 int main() {
     node* root = NULL;
     root = buildTree();
 
-    cout << "Inorder traversal of the tree: ";
-    inorderTraversal(root);
-    cout << endl;
+    // cout << "Inorder traversal of the tree: ";
+    // inorderTraversal(root);
+    // cout << endl;
 
     return 0;
 }
