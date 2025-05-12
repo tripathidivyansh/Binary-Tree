@@ -28,18 +28,18 @@ node* buildTree(){
     return root;
 }
 
-void preorder(node* root){
+void postorder(node* root){
     if(root == NULL){
         return;
     }
+    postorder(root->left);
+    postorder(root->right);
     cout << root->data << " ";
-    preorder(root->left);
-    preorder(root->right);
 }
 int main(){
     node* root = NULL;
     root = buildTree();
 
-    preorder(root);
+    postorder(root);
 
 }
