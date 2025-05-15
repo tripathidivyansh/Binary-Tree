@@ -10,7 +10,7 @@ public:
     Node(int d) {
         data = d;
         left = right = NULL;
-    }
+    }          
 };
 
 // Build the binary tree from level-order input
@@ -22,7 +22,7 @@ void buildFromLevelOrder(Node* &root) {
     if (data == -1) {
         root = NULL;
         return;
-    }
+    } 
 
     root = new Node(data);
     q.push(root);
